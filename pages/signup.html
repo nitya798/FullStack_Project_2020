@@ -10,7 +10,7 @@
 
     <title>Welcome</title>
   </head>
-  <body>
+  <body class="bg-dark">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand" href="#">XYZ</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -21,10 +21,10 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Home </a>
+                    <a class="nav-link" href="../index.html">Home </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" href="#">About Us</a>
+                    <a class="nav-link active" href="../pages/About.html">About Us</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -39,7 +39,7 @@
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link " href="#">Contact Us</a>
+                    <a class="nav-link " href="../pages/Contact.html">Contact Us</a>
                 </li>
             </ul>
             <form class="form-inline my-2 my-lg-0">
@@ -48,36 +48,32 @@
             </form>
         </div>
     </nav>
-    <div class="container">
-        <form>
+    <div class="container mx-auto my-5 col-5 bg-dark">
+
+        <form class="bg-dark">
             <div class="form-group">
-              <label for="exampleFormControlInput1">Email address</label>
+            <button type="button" class="btn btn-primary my-2">SignUp with facebook</button>
+            <button type="button" class="btn btn-danger float-right my-2">SignUp with google</button>
+            <br>
+              <label class="text-light" for="exampleFormControlInput1">Your First & Last Name:</label>
+              <input type="email" class="form-control" id="exampleFormControlInput1" >
+            </div>
+            <div class="form-group">
+              <label class="text-light" for="exampleFormControlSelect1">Your Email Address:</label>
               <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
             </div>
             <div class="form-group">
-              <label for="exampleFormControlSelect1">Example select</label>
-              <select class="form-control" id="exampleFormControlSelect1">
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-              </select>
+              <label class="text-light" for="exampleFormControlSelect2">Choose Your Password:</label>
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Password">
+              
             </div>
             <div class="form-group">
-              <label for="exampleFormControlSelect2">Example multiple select</label>
-              <select multiple class="form-control" id="exampleFormControlSelect2">
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-              </select>
+              <label for="exampleFormControlTextarea1" class="text-light">Choose Your PortFolio Address:</label>
+              <div class="input-group"> 
+              <input type="email" class="form-control col-sm-10" id="exampleFormControlInput1" >
+              <span id="domain_appendage" class="input-group-btn text-light">.xyz.com</span>
             </div>
-            <div class="form-group">
-              <label for="exampleFormControlTextarea1">Example textarea</label>
-              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-            </div>
+            
           </form>
     </div>
 
